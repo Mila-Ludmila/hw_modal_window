@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  background-color: gray;
+}
+.container{
+  margin: 0 auto;
+  padding: 10px;
+  width: 1200px;
+}
+.block{
+  background-color: white;
+}
+button{
+  font-size: 20px;
+  padding: 10px;
+}
+#modal{
+  width: 600px;
+  height: 200px;
+  position: fixed;
+    bottom: 50%;
+    right: 34%;
+    z-index: 99999;
+    background-color: rgb(201, 247, 249);
+    opacity: 1;
+
+    transition: opacity 0.2s ease;
+}
+#modal p{
+  padding: 25px;
+
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+#modal button{
+  width: 450px;
+  margin: 20px 70px;
+}
+#modal.modal{
+  opacity: 0;
+}
